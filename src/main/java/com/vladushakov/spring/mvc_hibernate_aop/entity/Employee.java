@@ -1,6 +1,6 @@
 package com.vladushakov.spring.mvc_hibernate_aop.entity;
-
 import javax.persistence.*;
+
 
 @Entity
 @Table(name = "employees")
@@ -25,6 +25,10 @@ public class Employee {
         this.surname = surname;
         this.department = department;
         this.salary = salary;
+    }
+
+    public Employee() {
+
     }
 
     public int getId() {
