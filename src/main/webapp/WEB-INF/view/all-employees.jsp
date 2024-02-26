@@ -23,12 +23,17 @@
             <c:param name="empId" value="${emp.id}"></c:param>
         </c:url>
 
+        <c:url var="deleteButton" value="/delete-employee">
+            <c:param name="empId" value="${emp.id}"></c:param>
+        </c:url>
+
         <tr>
             <td>${emp.name}</td>
             <td>${emp.surname}</td>
             <td>${emp.department}</td>
             <td>${emp.salary}</td>
             <td><input type="button" value="Update" onclick="window.location.href='${updateButton}'"/></td>
+            <td><input type="button" value="Delete" onclick="window.location.href = '${deleteButton}'"/></td>
         </tr>
 
     </c:forEach>
